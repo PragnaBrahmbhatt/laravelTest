@@ -97,7 +97,9 @@ class EventsController extends BaseController
      */
 
     public function getEventsWithWorkshops() {
-        throw new \Exception('implement in coding task 1');
+        $eventData=Event::get()->toArray();
+        echo json_encode($eventData);
+        // throw new \Exception('implement in coding task 1');
     }
 
 
